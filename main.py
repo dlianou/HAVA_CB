@@ -4,9 +4,9 @@ from time import sleep
 
 # Define a fxn called main
 def main():
-    #get_gv_refunds()
+    get_gv_refunds()
     sleep(10)
-    get_gv_chbks()
+    #get_gv_chbks()
 
 
 

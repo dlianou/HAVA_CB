@@ -44,8 +44,8 @@ def get_gv_refunds():
 
     Start_Date = date.today() -timedelta(days=7)
     Start_Date = Start_Date.strftime("%Y-%m-%d")
-    End_Date = date.today() -timedelta(days=7)
-    End_Date = Start_Date.strftime("%Y-%m-%d")
+    End_Date = date.today() -timedelta(days=1)
+    End_Date = End_Date.strftime("%Y-%m-%d")
 
     for page in range(1, 9999):
         try:
@@ -57,8 +57,8 @@ def get_gv_refunds():
             }
 
             payload = {
-                'startDate': '2022-05-01',
-                'endDate': '2022-06-19',
+                'startDate': '2022-06-20',
+                'endDate': '2022-06-22',
                  # 'vendor': 'metabofix',
                 'type': 'RFND'
                 # 'type': 'CGBK'
@@ -135,17 +135,17 @@ def get_gv_refunds():
     #print(wks)
 
     # Upload Data To A Google Sheet From A Pandas DataFrame
-    wks.set_dataframe(gs_tmp_df, start=(1, 1), extend=True)
+    #wks.set_dataframe(gs_tmp_df, start=(1, 1), extend=True)
 
 
     # Append data to existing gsheet if sheet is not empty
     #  Convert datetime objects in a dataframe to string before appending to google sheets.
     #  Since we use json for uploading via service account and json doesn’t have built-in type date/time values and it will cause an error.
-    # gs_tmp_df['transactionTime'] = pd.to_datetime(gs_tmp_df['transactionTime'])
-    # # convert to string so append method can read it
-    # gs_tmp_df['transactionTime'] = gs_tmp_df['transactionTime'].astype(str)
-    # # Append data to gsheet
-    # wks.append_table(values=gs_tmp_df.values.tolist())
+    gs_tmp_df['transactionTime'] = pd.to_datetime(gs_tmp_df['transactionTime'])
+    # convert to string so append method can read it
+    gs_tmp_df['transactionTime'] = gs_tmp_df['transactionTime'].astype(str)
+    # Append data to gsheet
+    wks.append_table(values=gs_tmp_df.values.tolist())
 
 
 
