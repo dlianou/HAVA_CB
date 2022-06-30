@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "hava-341419",
+  "private_key_id": "b3c3c268a536e54cec6d7509023a876350f9074e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC0P7WBdnjdRYsB\nOkUHYLC4JCXsKAJ4bSnt0Ce5gwy4K9jZvHF+YFIYAALY979ZfDY0Et0VeT/zoqjj\nJSNqtJbjdTSEnvGQ5sej7q/JYGDJ319jH0FvjPgnjTPPNbRCwQw3+rPbme6lP1oA\nIqRXcJ1yV1JcQI5xmNAn6fChPlEBlxCc1JCszy4LCxZJUMRyEYgQ34fpw9jW9SaW\ntd8nF+4f0X53M8AoFYOPGZf7v76iL6ndDKJKnxeukKEe/8+YqRgqd9FpxU1Mf4EA\nfiiXNAs2sFR2+nh5rTqjKDMouwpN/SWLC3Hv+4JB8G/XqQHUNfde5sLQoVupxJVM\nizRqxFJXAgMBAAECggEAGI/X6XDd7nUUCJJKpsM3wZf3bPNUxtlFTelACIkBmjUr\nYxxJMOnqNegGe09jTUveTQFHDC6OFuKS9gTxCxDZwNwPUIUiMNcp3D5hyOSvu8KL\nCoRPU+aXSDh3F2Tfj/sjcZthl+qlePIljwApedrYMaURjY2ke3lR4CaCSk6mFjum\n5JnzNJlabPNWMydir52Ml2zC/P2M7304XqKJnBDOpLgv6a+RXBW/+vI2NYbpwZtr\ncKKzpJ+/L0s00tYkG+miZLA1ETMnbwClmYyAUYpeY4H9rJFAAAB7aKmqFUjpE+pA\nn36Ac1AZI6eOyxAsGfvNfwWICcR+aSpbBkfppiL1xQKBgQD6g/IgFpr65+r1T/Bb\nALZORKWBYKQi2UhN+dHTX+ytLpTOdH3/BPgG+Mc5mw/vgMY0JlNXzCdIttIbHrsM\nWkfwqSYw1y+Q03NJV1jBVKI9hM997aDHwK1kZmHohQ+AzvB3xP4NrYbrV5stnJ5Z\nj+9RVIZk8fArJr3Ep9/B3bndCwKBgQC4MfFlARyBuurzDUD/riZYg5Aj3iyZKpNh\ncFxzIS6WVkZJa1c6RkVJisc8FibzTmIxEmhF/5xR4iIiPii6pHOT4Z5mukfcmkw5\nqWa1NytlnOJPIcTE/xoj6ucmXT0FH2HbsG9Jdl4o7oblIow1K0SOe3ZWWdNA8nUS\nlcPqbhB3ZQKBgFmeXD74d0btMpPBnjWgApfrXN30yaMh4gjrJxIcDdpCgL9+0xgp\nGeW8l+DWxROkGMPNNiGBikgsBuvmyXl4zqWcjWoJgR2pV2PUWI8JDOU/Hs9o9Ayh\ntCXnrnz1JP+qiEIAefZArrSAaaYeklNt92o797wjBQ0a1eaFO7np7TTTAoGAY2Un\n8y4/WM4p3NBpI8+xB5CvJnvMqzZrY2hDqyjbv+p8cUAISP0EhKPr0UPO7vp8SCi7\nthIyI4mYi8vpJJZ7e/CDDsI05xkoSvFb6CwGMgYPpU3+paNXUsx+wZgMxofhwbAa\nzZSfSQ02I82ZxVM84npDKGO+eMydWlMQ7p9IKXUCgYBvEYLEWnIsJnmJqQLWZ3Pv\nPb/Pqr9jcIWiETq8VwaQlPPBiz6VuUaTKsw/GdmA5gw3te0tKHpL7EgQFUGxU1Xd\n0wcO8HYgxoad/+xOwE/zZOrN8MF3lwjRpvDIru1VySYq8sQOpilg1ojzOg+6PF9k\n0RLsKpYWnqz7N1iwQmZZLw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "hava-cb-data@hava-341419.iam.gserviceaccount.com",
+  "client_id": "112418909376952040203",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/hava-cb-data%40hava-341419.iam.gserviceaccount.com"
+}
