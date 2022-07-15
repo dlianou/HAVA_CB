@@ -9,3 +9,4 @@ test.py
 metabase.*
 dbml-error.log
 http_cache.sqlite
+configfile.ini

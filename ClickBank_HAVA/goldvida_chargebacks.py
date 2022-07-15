@@ -89,13 +89,18 @@ def get_gv_chbks():
     # Then use pandas.concat() fxn to turn the list into a single dataframe
     test_trx = pd.concat(df)
 
+    # Add a timestamp displaying when the data was collected
+    timestamp = datetime.now()
+    timestamp = timestamp.strftime("%Y-%m-%d-%H-%M-%S")
+    test_trx['lastupdated'] = timestamp
+
     ## Manipulate the Data
     # Create a working copy
     tmp_df = test_trx.copy()
 
     # check data types
-    tmp_df.dtypes
-    tmp_df.info()
+    #tmp_df.dtypes
+    #tmp_df.info()
 
     # Convert object to Series
     tmp_df['transactionTime'] = pd.Series(tmp_df['transactionTime'])
@@ -110,7 +115,7 @@ def get_gv_chbks():
 
     # Keep the necessary columns and forget the rest
 
-    tmp_df = tmp_df.loc[:, ['transactionTime', 'vendor', 'receipt', 'transactionType', 'totalOrderAmount']]
+    tmp_df = tmp_df.loc[:, ['transactionTime', 'vendor', 'receipt', 'transactionType', 'totalOrderAmount','lastupdated']]
     gs_tmp_df = tmp_df.copy()
 
     ## Send dataframe to google sheet
@@ -147,7 +152,10 @@ def get_gv_chbks():
     # Append data to gsheet
     wks.append_table(values=gs_tmp_df.values.tolist())
 
-
+    # Print the End Date when the cron runs
+    print(f"Chargeback data as of {End_Date}")
+    # Print the date the cron ran
+    print(f"Cron ran at {timestamp}")
 
 
 if __name__ == '__main__':
